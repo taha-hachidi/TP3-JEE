@@ -1,2 +1,5 @@
-# TP3-JEE
-# TP3-JEE
+Dans la première partie, nous avons mis en place l'infrastructure de base de l'application, y compris la configuration de Spring MVC et l'intégration de Thymeleaf pour la gestion des vues. Nous avons également utilisé Bootstrap pour améliorer le style CSS de nos pages.
+
+Dans la deuxième partie, nous avons créé une page de modèle qui permet aux utilisateurs de saisir et d'ajouter de nouveaux patients. Nous avons validé les formulaires en utilisant les annotations de validation de Spring Boot, ce qui nous a permis d'appliquer des contraintes aux données saisies. Pour afficher les messages d'erreur associés à chaque champ, nous avons utilisé la fonctionnalité th:errors de Thymeleaf. De plus, nous avons ajouté un bouton "Modifier" pour permettre la modification des données d'un patient existant.
+
+Enfin, dans la troisième partie, nous avons mis en place un système d'authentification basé sur Spring Security. Nous avons créé trois utilisateurs avec le rôle "UTILISATEUR", dont un détient le rôle "ADMIN", qui est autorisé à effectuer des opérations de modification, de suppression et d'ajout de patients. Pour stocker les informations sur les utilisateurs et les rôles, nous avons utilisé une base de données relationnelle avec un accès JDBC, en utilisant la stratégie JDBC Authentication. De plus, nous avons utilisé UserDetailsService pour permettre à Spring Security de rechercher les utilisateurs dans la base de données.
